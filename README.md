@@ -82,3 +82,13 @@ Run the following command in a terminal to launch the IOSt Server. Please make s
 
 > iserver -f ./config/iserver.yml
 
+## Add an account in local server using iwallet
+
+Run the following command to import an account in the local node.
+
+> iwallet account import admin 2yquS3ySrGWPEKywCPzX4RTJugqRh7kJSo5aehsLYPEWkUxBWA39oMrZ7ZxuM4fgyXYs2cPwh5n8aNNpH5x2VyK1
+
+After this command, the key store json file will written into ~/.iwallet/admin.json. Later 'iwallet --account admin' command will lookup account key store json inside ~/.iwallet folder and find the correct file.
+
+To Know more commands on the iWallet CLI please refer to the [IOST Docs](https://developers.iost.io/docs/en/4-running-iost-node/iWallet.html)
+
